@@ -22,7 +22,7 @@ builds:
     flags:
       - -trimpath
     ldflags:
-      - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=goreleaser
+      - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=kumose
 
 changelog:
   sort: asc
@@ -65,13 +65,13 @@ brews:
       owner: goreleaser
       name: homebrew-tap
     directory: Formula
-    homepage: https://github.com/goreleaser/chglog
+    homepage: https://github.com/kumose-go/chglog
     description: chglog is a changelog management library and tool
     test: |
       system "#{bin}/chglog version"
 nfpms:
   - file_name_template: "{{ .ProjectName }}_{{ .Arch }}"
-    homepage: https://github.com/goreleaser/chglog
+    homepage: https://github.com/kumose-go/chglog
     description: chglog is a changelog management library and tool
     maintainer: Dj Gilcrease <d.gilcrease@f5.com>
     license: MIT

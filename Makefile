@@ -20,7 +20,7 @@ ci: build test
 .PHONY: ci
 
 build:
-	goreleaser build --clean --snapshot --single-target -o chglog
+	kmdo pkg build --clean --snapshot --single-target -o chglog
 .PHONY: build
 
 .DEFAULT_GOAL := build

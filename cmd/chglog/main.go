@@ -6,7 +6,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/goreleaser/chglog/pkg/commands"
+	"github.com/kumose-go/chglog/pkg/commands"
 	"github.com/spf13/cobra"
 )
 

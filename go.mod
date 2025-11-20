@@ -1,4 +1,4 @@
-module github.com/goreleaser/chglog
+module github.com/kumose-go/chglog
 
 go 1.24.0
 

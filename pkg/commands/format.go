@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/goreleaser/chglog"
+	"github.com/kumose-go/chglog"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
